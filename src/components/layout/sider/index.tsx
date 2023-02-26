@@ -36,7 +36,7 @@ import {
 } from "@pankod/refine-core";
 
 import { Title as DefaultTitle } from "../title";
-import { yariga } from "assets";
+
 
 export const Sider: typeof DefaultSider = ({ render }) => {
   const [collapsed, setCollapsed] = useState(false);
@@ -248,7 +248,9 @@ export const Sider: typeof DefaultSider = ({ render }) => {
             sx={{
               justifyContent: "center",
               minWidth: 36,
-              color: "primary.contrastText",
+              color: "#808191",
+              marginLeft: '6px',
+              marginRight: '14px',
             }}
           >
             <Dashboard />
@@ -363,7 +365,7 @@ export const Sider: typeof DefaultSider = ({ render }) => {
             display: { sm: "block", md: "none" },
             "& .MuiDrawer-paper": {
               width: 256,
-              bgcolor: "secondary.main",
+              bgcolor: "#fcfcfc",
             },
           }}
         >
