@@ -36,8 +36,15 @@ const Form = ({
             flexDirection: "column",
             gap: "20px",
           }}
-          onSubmit={handleSubmit()}
-        ></form>
+          onSubmit={handleSubmit(onFinishHandler)}
+        >
+          <FormControl>
+            <FormHelperText>Enter property name:</FormHelperText>
+            <TextField
+              
+            />
+          </FormControl>
+        </form>
       </Box>
     </Box>
   );
